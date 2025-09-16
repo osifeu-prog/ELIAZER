@@ -83,7 +83,7 @@
             flex-shrink: 0;
             z-index: 10;
         }
-         .chart-container {
+          .chart-container {
             position: relative; 
             width: 100%; 
             max-width: 600px; 
@@ -128,27 +128,45 @@
                             <p class="text-gray-600">הכל מתחיל בקישור שתקבלו לחנות קלפים. בחנות, תתבקשו לבצע "רכישה" של קלף מיוחד בעלות של 249 ש"ח כדי להתחיל את תהליך האימות.</p>
                         </div>
                     </div>
-                     <div class="flowchart-step">
+
+                    <div class="flowchart-step">
                         <div class="flowchart-icon">2</div>
                         <div class="mr-6">
                             <h3 class="font-bold text-xl text-gray-800">הוכחת תשלום</h3>
-                            <p class="text-gray-600">כדי לאמת את זהותכם, תצטרכו לשלוח צילום מסך של העברה בנקאית בסך 249 ש"ח. הבוט יציג לכם את פרטי החשבון המדויקים:</p>
-                            <div class="mt-2 p-3 bg-gray-100 rounded-lg text-sm text-gray-700">
-                                <strong>בנק:</strong> ONE ZERO (18) <br>
-                                <strong>סניף:</strong> 001 <br>
-                                <strong>חשבון:</strong> 215875698 <br>
-                                <strong>מוטב:</strong> אלעזר בלוי
+                            <p class="text-gray-600">כדי לאמת את זהותכם, תצטרכו לשלוח צילום מסך של העברת התשלום. הבוט יציג לכם את פרטי החשבון/ארנק המדויקים:</p>
+                            <div class="mt-2 p-4 bg-gray-100 rounded-lg text-sm text-gray-700 space-y-4">
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-base mb-2">תשלום ב-TON</h4>
+                                    <p class="text-gray-600 text-sm mb-2">
+                                        ניתן להעביר ישירות דרך ארנק הטלגרם שלכם. העברה מתבצעת על רשת TON.
+                                    </p>
+                                    <div class="flex flex-col items-center">
+                                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ton://transfer/0x435B4d5e6D2Ea19474add911d92f77E8fac1Ac76" 
+                                             alt="TON QR Code" 
+                                             class="rounded-lg shadow-md mb-2">
+                                        <div class="break-all text-xs text-gray-500 font-mono text-center">
+                                            0x435B4d5e6D2Ea19474add911d92f77E8fac1Ac76
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 bg-white rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-base mb-2">העברה בנקאית</h4>
+                                    <strong>שם מוטב:</strong> אלעזר בלוי <br>
+                                    <strong>בנק:</strong> ONE ZERO (18) <br>
+                                    <strong>סניף:</strong> 001 <br>
+                                    <strong>חשבון:</strong> 215875698
+                                </div>
                             </div>
                         </div>
                     </div>
-                     <div class="flowchart-step">
+                    <div class="flowchart-step">
                         <div class="flowchart-icon">3</div>
                         <div class="mr-6">
                             <h3 class="font-bold text-xl text-gray-800">המתנה לאישור</h3>
                             <p class="text-gray-600">הוכחת התשלום שלכם נשלחת במקביל למנהל החנות ולמנהל המערכת הראשי ("מנהל המפעל"). אחד מהם יאשר אתכם באופן ידני.</p>
                         </div>
                     </div>
-                     <div class="flowchart-step">
+                    <div class="flowchart-step">
                         <div class="flowchart-icon">4</div>
                         <div class="mr-6">
                             <h3 class="font-bold text-xl text-gray-800">קבלת טוקן והפעלת החנות</h3>
@@ -165,18 +183,19 @@
                     </div>
                 </div>
 
-                <!-- Crypto Transfer Section - NEW -->
-                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-200 mb-8 text-center mt-8">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700">תרומה במטבע TON</h2>
-                    <p class="text-sm text-gray-600 mb-4">
-                        ניתן לתרום ישירות לארנק ה-TON שלנו. העברה מתבצעת ברשת TON.
+                <!-- Contact Section with QR - New Section -->
+                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-200 mb-8 text-center mt-8 card">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-700">צור קשר</h2>
+                    <p class="text-sm text-gray-600 mb-4 max-w-lg mx-auto">
+                        לכל שאלה, תמיכה או מידע נוסף, אתם יכולים ליצור איתנו קשר.
                         <br>
-                        <span class="font-bold text-indigo-700">יש לסרוק את קוד ה-QR דרך ארנק טלגרם.</span>
+                        <span class="font-bold text-indigo-700">ניתן לסרוק את קוד ה-QR כדי להגיע לארנק TON.</span>
                     </p>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=ton://transfer/0x435B4d5e6D2Ea19474add911d92f77E8fac1Ac76" alt="TON QR Code" class="mx-auto rounded-lg shadow-md">
-                    <div class="mt-4 break-all text-xs text-gray-500 font-mono">
-                        0x435B4d5e6D2Ea19474add911d92f77E8fac1Ac76
-                    </div>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ton://transfer/0x435B4d5e6D2Ea19474add911d92f77E8fac1Ac76" alt="TON QR Code" class="mx-auto rounded-lg shadow-md mb-4">
+                    <ul class="text-gray-700 text-base">
+                        <li class="mb-2"><strong>אימייל:</strong> contact@example.com</li>
+                        <li><strong>טלפון:</strong> 0506861837</li>
+                    </ul>
                 </div>
             </section>
 
@@ -228,7 +247,7 @@
                         <h3 class="font-bold text-xl mb-3">אישור חנויות חדשות</h3>
                         <p class="text-gray-600">כאשר משתמש חדש מסיים את תהליך ההרשמה הראשונית, תקבלו בקשה לאישור. תפקידכם הוא לבדוק את הוכחת התשלום, ובמידה והכל תקין, להנפיק לו טוקן ייחודי דרך BotFactory כדי שיוכל ליצור את החנות שלו.</p>
                     </div>
-                     <div class="card">
+                    <div class="card">
                         <h3 class="font-bold text-xl mb-3">ניהול בוטים וקבוצות</h3>
                         <p class="text-gray-600">בפאנל הראשי תוכלו לרשום בוטים חדשים, לקטלג אותם (למשל, "בוט חנות" או "בוט תפעולי"), ולשייך אותם לקבוצות הטלגרם הרלוונטיות לצורך פרסומים ועדכונים.</p>
                     </div>
@@ -242,7 +261,7 @@
                             <canvas id="botsChart"></canvas>
                         </div>
                     </div>
-                     <div class="card">
+                    <div class="card">
                         <h3 class="font-bold text-xl mb-3">משתמשים חדשים</h3>
                         <div class="chart-container">
                             <canvas id="usersChart"></canvas>
@@ -319,10 +338,10 @@
                             hoverOffset: 4
                         }]
                     },
-                     options: {
+                    options: {
                         responsive: true,
                         maintainAspectRatio: false,
-                         plugins: {
+                        plugins: {
                             legend: {
                                 position: 'top',
                             },
@@ -334,7 +353,7 @@
                     }
                 },
                 users: {
-                     type: 'line',
+                    type: 'line',
                     data: {
                         labels: ['שבוע 1', 'שבוע 2', 'שבוע 3', 'שבוע 4', 'שבוע 5'],
                         datasets: [{
@@ -345,7 +364,7 @@
                             tension: 0.1
                         }]
                     },
-                     options: {
+                    options: {
                         responsive: true,
                         maintainAspectRatio: false,
                         scales: {
@@ -353,15 +372,15 @@
                                 beginAtZero: true
                             }
                         },
-                         plugins: {
-                             legend: {
-                                 display: false
-                             },
-                             title: {
-                                 display: true,
-                                 text: 'מצטרפים חדשים לפי שבוע'
-                             }
-                         }
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: 'מצטרפים חדשים לפי שבוע'
+                            }
+                        }
                     }
                 }
             };
@@ -392,10 +411,10 @@
                 });
 
                 if (target === 'manager') {
-                   discountsChart = renderChart('discountsChart', chartConfigs.discounts);
+                    discountsChart = renderChart('discountsChart', chartConfigs.discounts);
                 } else if (target === 'admin') {
-                   botsChart = renderChart('botsChart', chartConfigs.bots);
-                   usersChart = renderChart('usersChart', chartConfigs.users);
+                    botsChart = renderChart('botsChart', chartConfigs.bots);
+                    usersChart = renderChart('usersChart', chartConfigs.users);
                 }
             }
 
